@@ -1,0 +1,39 @@
+body {
+    font-family: var(--playfair);
+}
+
+.text-holder{
+    display: block;
+    margin:20px 0px 30px 60px;
+}
+
+
+.galeria-titulo {
+    margin-left: 100px;
+    font-size: 40px;
+    font-style: var(--playfair);
+  }
+  
+.galeria-descricao {
+    margin-left: 100px;
+    margin-right: 150px;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  
+.galeria-imagens-geral {
+    text-align: center;
+    margin: auto;
+    max-width: 2000px;
+  }
+  
+.galeria-imagem {
+    width: 400px;
+    height: 400px;
+    margin: 30px;
+  }
+  
+.galeria-video {
+    text-align: center;
+    margin-bottom: 50px;
+  }

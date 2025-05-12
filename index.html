@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinheria Agnello</title>
+    <meta name="description"
+        content="Descubra vinhos selecionados com cuidado, tradição e paixão por cada detalhe. Tintos, brancos, rosés e espumantes: uma seleção para todos os paladares.">
+
+    <!-- Palavras-chave -->
+    <meta name="keywords"
+        content="vinheria, Agnello, vinhos selecionados, vinho tinto, vinho branco, vinho rosé, São Paulo">
+
+    <!-- Autor e direitos autorais -->
+    <meta name="author" content="DevSquad FIAP">
+    <meta name="copyright" content="© DevSquad FIAP 2025">
+
+    <!-- Localização e Idioma -->
+    <meta name="geo.region" content="BR-SP">
+    <meta name="language" content="Portuguese">
+    <meta name="content-language" content="pt-BR">
+
+    <!-- links css -->
+    <link rel="stylesheet" href="src/css/hero-home.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <!-- api de scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="shortcut icon" href="src/assets/images/logo-icon.png" type="image/png">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <img src="src/assets/svgs/logo-icon.svg" alt="Logo">
+        <span class="logoTextHeader playfair whiteText">AGNELLO</span>
+        <nav>
+            <ul>
+                <li><a class="navLink playfair whiteText" href="#">home</a></li>
+                <li><a class="navLink playfair whiteText" href="./src/pages/produtos.html">produtos</a></li>
+                <li><a class="navLink playfair whiteText" href="./src/pages/galeria.html">galeria</a></li>
+                <li><a class="navLink playfair whiteText" href="./src/pages/contato.html">contato</a></li>
+                <li><a class="navLink playfair whiteText" href="./src/pages/trabalhe-conosco.html">trabalhe conosco</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- hero -->
+        <section id="hero">
+            <article class="delaySmallReveal">
+                <div>
+                    <p class="playfair whiteText">Descubra vinhos<br>selecionados<br>com cuidado,<br>tradição<br>e
+                        paixão por cada<br>detalhe.</p>
+                </div>
+            </article>
+            <figure class="delayMediumReveal" class="image">
+                <img src="src/assets/svgs/garrafa-taca-hero.svg" alt="Garrafa e taça de vinho">
+            </figure>
+            <button id="scrollButton" class="delayExtraBigReveal">
+                <img src="src/assets/svgs/arrow-down.svg" alt="Botão scroll">
+                <span class="playfair whiteText">scroll down</span>
+            </button>
+        </section>
+        <section id="home">
+            <h1 class="homeTitle delayExtraSmallReveal">Tintos, brancos e rosés:</h1>
+            <h1 class="homeTitle homeTitleBottom delaySmallReveal">uma seleção para todos os paladares.</h1>
+            <div class="card intervalCardReveal">
+                <img loading="lazy" src="src/assets/images/tinto-vinho-card.png" alt="">
+                <div class="textCard delayMediumReveal">
+                    <p><span>Encorpado, intenso e marcante</span><br> o vinho tinto ideal para acompanhar momentos
+                        memoráveis.</p>
+                </div>
+            </div>
+            <div class="card intervalCardReveal">
+                <div class="textCard delayMediumReveal">
+                    <p><span>Fresco, leve e aromático</span><br>perfeito para paladares refinados e dias de celebração.
+                    </p>
+                </div>
+                <img loading="lazy" src="src/assets/images/branco-vinho-card.png" alt="">
+            </div>
+            <div class="card intervalCardReveal">
+                <img loading="lazy" src="src/assets/images/rose-vinho-card.png" alt="">
+                <div class="textCard delayMediumReveal">
+                    <p><span>Delicado e vibrante</span><br>o rosé equilibra frescor e elegância em cada gole.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="left">
+            <div class="top">
+                <div class="topLeft">
+                    <div id="logoFooter">
+                        <img src="src/assets/svgs/logo-icon.svg" alt="Logo Footer">
+                        <span class="playfair whiteText">AGNELLO</span>
+                    </div>
+                </div>
+                <div class="topRight">
+                    <div id="footerPhrase">
+                        <p class="playfair whiteText">A excelência dos vinhos, do nosso terroir <br> para a sua taça.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="horizontalDivisor">
+            <div class="bottom">
+                <div id="followUs">
+                    <span class="playfair whiteText">Siga-nos</span>
+                    <div id="socialMediasGroup">
+                        <a target="_blank" href=""><img src="src/assets/svgs/insta-icon.svg" alt=""></a>
+                        <a target="_blank" href=""><img src="src/assets/svgs/tt-icon.svg" alt=""></a>
+                        <a target="_blank" href=""><img src="src/assets/svgs/face-icon.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footerVerticalDivisor">
+        </div>
+        <div class="right">
+            <div class="top">
+                <div id="footerAddress">
+                    <p class="playfair whiteText"><span>Endereço:</span><br>
+                        Rua Fictícia, 187<br>CEP: 05789-059<br>São Paulo - SP, Brasil
+                    </p>
+                </div>
+            </div>
+            <hr class="horizontalDivisor">
+            <div class="bottom">
+                <div id="copyRight">
+                    <p class="playfair whiteText">Copyright<span>©</span> DevSquad FIAP 2025</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="src/js/main.js" defer></script>
+</body>
+
+</html>
