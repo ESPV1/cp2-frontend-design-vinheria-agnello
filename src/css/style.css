@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
-
 /* VARIÁVEIS */
 
 :root {
@@ -247,3 +246,5 @@ footer .left .bottom { position: relative; }
 .playfair { font-family: var(--playfair); }
 .whiteText { color: var(--off-white); }
 .darkText { color: var(--black); }
+
+@import url(./efeitos.css);
