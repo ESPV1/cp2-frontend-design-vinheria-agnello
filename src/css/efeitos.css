@@ -1,0 +1,14 @@
+/* Faz a seta subir e descer de forma continua */
+@keyframes moverSeta {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+/* Aplica a animação na imagem da seta do botão de rolagem */
+#scrollButton img {
+  animation: moverSeta 1s infinite;
+}
