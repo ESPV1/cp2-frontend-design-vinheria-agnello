@@ -10,5 +10,5 @@
 
 /* Aplica a animação na imagem da seta do botão de rolagem */
 #scrollButton img {
-  animation: moverSeta 1s infinite;
+  animation: moverSeta 2s ease-in-out infinite;
 }
