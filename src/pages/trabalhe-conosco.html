@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhe conosco</title>
-    <meta name="keywords" content="trabalhe conosco, vagas de emprego, oportunidades, carreira, recrutamento, RH, enviar currículo, trabalho, emprego, equipe, contratações, recursos humanos, talentos, carreira na empresa, trabalhe na agnello">
+    <meta name="keywords"
+        content="trabalhe conosco, vagas de emprego, oportunidades, carreira, recrutamento, RH, enviar currículo, trabalho, emprego, equipe, contratações, recursos humanos, talentos, carreira na empresa, trabalhe na agnello">
     <meta name="author" content="DevSquad FIAP">
     <meta name="copyright" content="© DevSquad FIAP 2025">
     <meta name="geo.region" content="BR-SP">
     <meta name="language" content="Portuguese">
     <meta name="content-language" content="pt-BR">
     <link rel="stylesheet" href="../css/trabalhe-conosco-style.css">
-    <link rel="stylesheet" href="../css/style.css">
-
+    <link rel="stylesheet" href="../css/style.css"> 
     <link rel="shortcut icon" href="../assets/images/logo-icon.png" type="image/png">
 </head>
+
 <body>
     <header>
         <img src="../assets/svgs/logo-icon.svg" alt="Logo">
@@ -32,50 +34,46 @@
     <main>
         <section class="form-section">
             <h1 class="playfair">Trabalhe Conosco</h1>
-            <p class="playfair">Preencha o formulário abaixo para se candidatar à vaga.</p>
+            <p class="playfair">Preencha o formulário abaixo para se candidatar às vagas.</p>
             <br> <br>
-          <form action="#" method="POST" enctype="multipart/form-data">
-            <div class="form-group">
-              <label class="playfair" for="nome">Nome Completo</label>
-              <br>
-              <input class="playfair" type="text" id="nome" name="nome" required />
-            </div>
-            <br>
-            <div class="form-group">
-              <label class="playfair" for="email">E-mail</label>
-              <br>
-              <input class="playfair" type="email" id="email" name="email" required />
-            </div>
-            <br>
-            <div class="form-group">
-              <label class="playfair" for="telefone">Telefone</label>
-              <br>
-              <input class="playfair" type="tel" id="telefone" name="telefone" required />
-            </div>
-            <br>
-            <div class="form-group">
-              <label class="playfair" for="cargo">Cargo Desejado</label>
-              <br>
-              <input class="playfair" type="text" id="cargo" name="cargo" required />
-            </div>
-            <br>
-            <div class="form-group">
-              <label class="playfair" for="mensagem">Mensagem</label>
-              <br>
-              <textarea class="playfair" id="mensagem" name="mensagem" rows="4" placeholder="Fale um pouco sobre você..."></textarea>
-            </div>
-            <br>
-            <div class="form-group">
-              <label class="playfair" for="curriculo">Currículo (PDF ou DOCX)</label>
-              <input class="playfair"  type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required />
-            </div>
-            <br>
-            <div class="form-group">
-              <button class="playfair" type="submit">Enviar</button>
-            </div>
-          </form>
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <input class="playfair" type="text" id="nome" name="nome" required />
+                    <label class="playfair" for="nome">Nome Completo</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input class="playfair" type="email" id="email" name="email" required />
+                    <label class="playfair" for="email">E-mail</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input class="playfair" type="tel" id="telefone" name="telefone" required />
+                    <label class="playfair" for="telefone">Telefone</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input class="playfair" type="text" id="cargo" name="cargo" required />
+                    <label class="playfair" for="cargo">Cargo Desejado</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <textarea class="playfair" id="mensagem" name="mensagem" rows="4"
+                        placeholder="Fale um pouco sobre você..."></textarea>
+                    <label class="playfair" for="mensagem">Mensagem</label>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input class="playfair" type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx"
+                    required />
+                </div>
+                <br>
+                <div class="form-group">
+                    <button class="playfair" type="submit">Enviar</button>
+                </div>
+            </form>
         </section>
-      </main>
+    </main>
     <footer>
         <div class="left">
             <div class="top">
@@ -122,5 +120,27 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const inputs = document.querySelectorAll('input');
+
+        inputs.forEach(input => {
+            const label = document.querySelector(`label[for="${input.id}"]`);
+
+            input.addEventListener('focus', () => {
+                if (input.value.trim() === '' && label) {
+                    label.classList.add('activeLabel');
+                }
+            });
+
+            input.addEventListener('blur', () => {
+                if (input.value.trim() === '' && label) {
+                    label.classList.remove('activeLabel');
+                }
+            });
+        });
+    </script>
+
 </body>
+
 </html>

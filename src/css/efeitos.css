@@ -1,14 +1,80 @@
-/* Faz a seta subir e descer de forma continua */
+/* 🎯 3 Pseudo-classes */
+
+/* 1ª pseudo-classe :hover */
+/* Onde: links do nav presente em todas as páginas */
+/* O que faz: esmaece o link quando o mouse passa por cima */
+nav ul li a:hover {
+  opacity: 0.8;
+}
+
+/* 2ª pseudo-classe :nth-child() */
+/* Onde: label do textarea da página 'trabalhe conosco' */
+/* O que faz: label do textarea fica em cima */
+.form-group:nth-child(9) label {
+  top: 0;
+}
+
+/* 3ª pseudo-classe :focus */
+/* Onde: inputs, labels e textarea da página 'trabalhe conosco' */
+/* O que faz: a cor da label fica vinho */
+input:focus+label,
+textarea:focus+label {
+  color: var(--dark-wine);
+}
+
+/* 🎯 3 Pseudo-elementos */
+
+/* 1º pseudo-elemento  */
+
+/* 2º pseudo-elemento  */
+
+/* 3º pseudo-elemento  */
+
+/* 💫 1 Animação */
+/* Onde: imagem de seta pra baixo da página 'home' */
+/* O que faz: a seta sobe e desce de forma contínua */
 @keyframes moverSeta {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(10px);
   }
 }
-
-/* Aplica a animação na imagem da seta do botão de rolagem */
 #scrollButton img {
   animation: moverSeta 2s ease-in-out infinite;
+}
+
+/* 🔄 Transições */
+/* Onde: labels da página 'trabalhe conosco' */
+/* O que faz: aplica uma transição na animação da label com classList.add(.activeLabel) */
+label {
+  transition: .2s;
+}
+/* Onde: inputs e textarea da página 'trabalhe conosco'*/
+/* O que faz: aplica uma transição na mudança de cor e espessura da borda com :focus */
+input, textarea{
+  transition: .1s ease;
+}
+/* Onde: botão de enviar formulário da página 'trabalhe conosco' */
+/* O que faz: aplica transição no tranform e na mudança de background com :hover */
+button{
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* 🎢 2 Transformações */
+
+/* 1ª transformação translateY() */
+/* Onde: labels da página 'trabalhe conosco' */
+/* O que faz: as labels ficam centralizadas nos inputs */
+label { transform: translateY(-50%); }
+
+/* 2ª transformação scale() */
+/* Onde: imagens de garrafas de vinho da página 'produtos' */
+/* O que faz: aumenta o tamanho das imagens com :hover */
+.produtos-image-holder:hover{
+    transform: scale(1.1);
 }
