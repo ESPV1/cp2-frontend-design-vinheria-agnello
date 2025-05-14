@@ -35,7 +35,9 @@ main{
     vertical-align: middle;
     width: 30%;
     height: 100%;
+    transition: .2s;
 }
+
 .produtos-image-holder img{
     display: inline-block;
     position: absolute;

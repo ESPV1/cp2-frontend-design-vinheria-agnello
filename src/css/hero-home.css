@@ -9,11 +9,21 @@ html {
     min-width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
 }
 
-header { position: fixed; }
+header {
+    position: fixed;
+}
 
-main { width: 100%; }
+main {
+    width: 100%;
+}
 
 #hero,
 #home {
@@ -149,7 +159,9 @@ figure {
     height: 100%;
 }
 
-.card:nth-of-type(2) .textCard { left: 5%; }
+.card:nth-of-type(2) .textCard {
+    left: 5%;
+}
 
 .card p {
     position: absolute;
@@ -162,4 +174,6 @@ figure {
     line-height: 4vw;
 }
 
-.card p span { font-weight: 900; }
+.card p span {
+    font-weight: 900;
+}
