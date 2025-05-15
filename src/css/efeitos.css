@@ -17,24 +17,37 @@ nav ul li a:hover {
 /* 3ª pseudo-classe :focus */
 /* Onde: inputs, labels e textarea da página 'trabalhe conosco' */
 /* O que faz: a cor da label fica vinho */
-input:focus+label,
-textarea:focus+label {
+input:focus + label,
+textarea:focus + label {
   color: var(--dark-wine);
 }
 
 /* 🎯 3 Pseudo-elementos */
 
 /* 1º pseudo-elemento  */
-
+/* Home: Usa ::first-letter para mudar a cor da inicial da palavra “Tintos” para vinho. */
+.firstLetter::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+  color: var(--light-whine);
+}
+/* Galeria: Usa ::first-letter para mudar a cor da inicial da palavra “Principal” para vinho. */
+.firstLetter::first-letter {
+  font-size: 150%;
+  font-weight: bold;
+  color: var(--light-whine);
+}
 /* 2º pseudo-elemento  */
-
-/* 3º pseudo-elemento  */
+/*Galeria: Usa ::selection para alterar a cor do texto selecionado para bege, com fundo vermelho. */
+.galeria-descricao::selection {
+  background-color: var(--light-whine);
+  color: var(--off-white);
+}
 
 /* 💫 1 Animação */
 /* Onde: imagem de seta pra baixo da página 'home' */
 /* O que faz: a seta sobe e desce de forma contínua */
 @keyframes moverSeta {
-
   0%,
   100% {
     transform: translateY(0);
@@ -52,16 +65,17 @@ textarea:focus+label {
 /* Onde: labels da página 'trabalhe conosco' */
 /* O que faz: aplica uma transição na animação da label com classList.add(.activeLabel) */
 label {
-  transition: .2s;
+  transition: 0.2s;
 }
 /* Onde: inputs e textarea da página 'trabalhe conosco'*/
 /* O que faz: aplica uma transição na mudança de cor e espessura da borda com :focus */
-input, textarea{
-  transition: .1s ease;
+input,
+textarea {
+  transition: 0.1s ease;
 }
 /* Onde: botão de enviar formulário da página 'trabalhe conosco' */
 /* O que faz: aplica transição no tranform e na mudança de background com :hover */
-button{
+button {
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
@@ -70,11 +84,13 @@ button{
 /* 1ª transformação translateY() */
 /* Onde: labels da página 'trabalhe conosco' */
 /* O que faz: as labels ficam centralizadas nos inputs */
-label { transform: translateY(-50%); }
+label {
+  transform: translateY(-50%);
+}
 
 /* 2ª transformação scale() */
 /* Onde: imagens de garrafas de vinho da página 'produtos' */
 /* O que faz: aumenta o tamanho das imagens com :hover */
-.produtos-image-holder:hover{
-    transform: scale(1.1);
+.produtos-image-holder:hover {
+  transform: scale(1.1);
 }
