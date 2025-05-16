@@ -17,7 +17,7 @@ A primeira etapa da solução para o problema do Sr. Giulio será a criação de
 * Trabalhe Conosco
 * Contato
 
-A segunda etapa da solução será adicionar os seguintes elementos na estrutura do código.
+A segunda etapa da solução será adicionar efeitos visuais a página:
 ### 🎯 Pseudo-classes
 - Aplicar ao menos **3 pseudo-classes diferentes**:
   - Ex: `:hover`, `:focus`, `:nth-child()`, `:not()`, `:checked`
@@ -42,7 +42,7 @@ A segunda etapa da solução será adicionar os seguintes elementos na estrutura
 
 
 ## 🔗 Como acessar o site
-O site atualmente só pode ser visto utilizando a integração do **Github Pages**, seguindo este link: .Fique à vontade para clonar o repositório ou fazer um fork e analisar mais detalhes utilizando a integração do *Live Server* (Visual Studio Code).
+O site atualmente só pode ser visto utilizando a integração do **Github Pages**, clicando neste [link](https://espv1.github.io/cp2-frontend-design-vinheria-agnello/) .Fique à vontade para clonar o repositório ou fazer um fork e analisar mais detalhes utilizando a integração do *Live Server* (Visual Studio Code).
 
 ## 🧰 Tecnologias Utilizadas
 * Linguagem de Marcação: HTML5
@@ -72,7 +72,7 @@ O site atualmente só pode ser visto utilizando a integração do **Github Pages
 ![Trabalhe Conosco Image](./src/assets/images/trabalhe_conosco_agnello.PNG)
 *Página de Trabalhe Conosco com informações sobre o interesse da vaga e um formulário não funcional para ser preenchido com informações do interessado.*
 
-## 🤖 Melhorias
+## 🤖 Efeitos Visuais
 
 ### 🎯 3 Pseudo-classes
 ```css
