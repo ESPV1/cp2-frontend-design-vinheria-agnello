@@ -205,7 +205,7 @@ label {
     </td>
     <td>
       <ul>
-        <li>Pseudo Elementos<li>
+        <li>Pseudo Elementos</li>
       </ul>
     </td>
   </tr>
